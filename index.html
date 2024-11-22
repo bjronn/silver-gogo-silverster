@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="SHORTCUT ICON" type="image/x-icon" href="lib/iconsv.jpg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar SV388 INDONESIA</title>
+    <style>body,select{background-repeat:no-repeat}select,select>option{overflow:auto}body{font-family:Arial,sans-serif;background-color:#1a1a1a;color:#fff;margin:0;padding:0;background-image:url("lib/bg-sv388.jpg");background-position:center;background-size:cover}.container{max-width:350px;margin:50px auto;padding:20px;background-color:#333;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.5)}.container img{width:200px;height:auto;margin-bottom:20px}.container p{text-align:center;margin-bottom:20px}form{display:grid;grid-gap:10px}label{font-weight:700}input[type=email],input[type=tel],input[type=text],select{width:100%;padding:10px;border:1px solid #555;border-radius:5px;box-sizing:border-box;font-size:16px;background-color:#333;color:#fff}select{appearance:none;background-image:url('data:image/svg+xml;utf8,<svg fill="rgba(255, 255, 255, 0.6)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M14.52 7.1L10 11.62 5.48 7.1a.75.75 0 0 0-1.06 1.06l5.25 5.25a.75.75 0 0 0 1.06 0l5.25-5.25a.75.75 0 0 0-1.06-1.06z"></path></svg>');background-position:right 10px center;padding-right:30px;cursor:pointer}input[type=submit]{width:100%;padding:10px;border:none;border-radius:5px;background-color:#f3b61c;color:#fff;font-size:16px;cursor:pointer;transition:background-color .3s}input[type=submit]:hover{background-color:#d19c17}</style>
+</head>
+<body class="site-background">
+<div class="container">
+    <div style="text-align:center"><img src="lib/logo_sv388.png" alt="SV388 Logo"></div>
+    <p>Pastikan data anda akurat dikarenakan anda akan mendapatkan whatsapp atau telegram yang berisi akun baru SV388. Terima kasih</p>
+    <form id="registration-form">
+        <label for="username">Username / Nama Pengguna:</label>
+        <input type="text" id="username" name="username" placeholder="gacor12" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="msbreww@gmail.com" required>
+
+        <label for="phone">No. Telegram / WhatsApp:</label>
+        <input maxlength="13" autocomplete="off" placeholder="Masukan nomor wa atau telegram anda" data-val="true" data-val-length="The field Phone must be a string with a minimum length of 10 and a maximum length of 13." data-val-length-max="13" data-val-length-min="10" data-val-regex="The field Phone must match the regular expression '^[0-9]+$'." data-val-regex-pattern="^[0-9]+$" id="phone" name="phone" type="tel" onkeypress="return isNumberKey(event)" required>
+
+        <label for="bank">Bank / E-wallet:</label>
+        <select id="bank" name="bank" required>
+            <option value="" disabled selected>--Pilih Bank / E-wallet--</option>
+            <option value="BCA">BCA</option>
+            <option value="BCA DIGITAL">BCA DIGITAL</option>
+            <option value="BNI">BNI</option>
+            <option value="DANAMON">DANAMON</option>
+            <option value="MANDIRI">MANDIRI</option>
+            <option value="SEABANK">SEABANK</option>
+            <option value="PANIN">PANIN</option>
+            <option value="CIMB">CIMB</option>
+            <option value="JAGO">JAGO</option>
+            <option value="BSI">BSI</option>
+            <option value="BPD">BPD</option>
+            <option value="DANA">DANA</option>
+            <option value="GOPAY">GOPAY</option>
+            <option value="OVO">OVO</option>
+            <option value="LINKAJA">LINKAJA</option>
+            <option value="JENIUS">JENIUS</option>
+        </select>
+
+        <label for="account_name">Nama Rekening:</label>
+        <input type="text" id="account_name" placeholder="Masukan nama lengkap anda" name="account_name" required>
+
+        <label for="account_number">Nomor Rekening:</label>
+        <input maxlength="20" autocomplete="off" placeholder="Masukan nomor rekening anda" data-val="true" data-val-regex="'^[0-9]+$'." data-val-regex-pattern="^[0-9]+$" data-val-required="Silahkan isi Rekening anda." id="account_number" name="account_number" type="tel" onkeypress="return isNumberKey(event)" required>
+
+        <label for="game">Jenis Permainan:</label>
+        <select id="game" name="game" required>
+            <option value="" disabled selected>--Pilih Jenis Permainan--</option>
+            <option value="SV388">SABUNG AYAM SV388</option>
+            <option value="Judi Bola">JUDI BOLA</option>
+            <option value="Slot Gacor">SLOT</option>
+            <option value="Casino Online">LIVE CASINO</option>
+        </select>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <p style="font-size:9pt">Dengan klik <b>REGISTER</b>, saya menyatakan bahwa telah membaca dan menyetujui syarat & ketentuan kami.</p>
+</div>
+<script>
+    document.getElementById('registration-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Ambil data dari form
+        const username = document.getElementById('username').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const bank = document.getElementById('bank').value;
+        const accountName = document.getElementById('account_name').value;
+        const accountNumber = document.getElementById('account_number').value;
+        const game = document.getElementById('game').value;
+
+        const formData = {
+            username: username,
+            email: email,
+            phone: phone,
+            bank: bank,
+            account_name: accountName,
+            account_number: accountNumber,
+            game: game
+        };
+
+        // Kirim data ke serverless function
+        fetch('/api/send-telegram', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                window.location.href = "/thanks.html";
+            } else {
+                alert('Terjadi kesalahan. Coba lagi.');
+            }
+        })
+        .catch(error => {
+            alert('Terjadi kesalahan saat mengirim data. Coba lagi.');
+        });
+    });
+</script>
+
+
+<script type="text/javascript">
+    function isNumberKey(event) {
+        keycode = event.keyCode;
+        if (keycode > 47 && keycode < 58) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeypress = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            return false;
+        }
+    }
+
+    document.onmousedown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            return false;
+        }
+    }
+
+    document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            return false;
+        }
+    }
+
+    jQuery(document).ready(function($){
+        $(document).keydown(function(event) {
+            var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+
+            if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u")) {
+                alert('Sorry, This Functionality Has Been Disabled!');
+                //disable key press porcessing
+                return false;
+            }
+        });
+    });
+</script>
+</body>
+</html>
