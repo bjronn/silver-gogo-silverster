@@ -86,7 +86,7 @@
         };
 
         // Kirim data ke serverless function
-        fetch('/api/send-telegram', {
+        fetch('functions/send-telegram', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
