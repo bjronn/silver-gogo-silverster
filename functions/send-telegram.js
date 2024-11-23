@@ -1,5 +1,5 @@
 const TELEGRAM_BOT_API_URL = `https://api.telegram.org/bot${process.env.TELEGRAM_BOT_API_KEY}/sendMessage`;
-const CHAT_ID = process.env.CHAT_ID;  // Pastikan environment variable ini ada di Cloudflare Pages
+const CHAT_ID = process.env.CHAT_ID;
 
 async function sendToTelegram(data) {
   const message = `
