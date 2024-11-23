@@ -1,6 +1,18 @@
 name = "silver-gogo-silverster"
-type = "javascript"
+main = "functions/send-telegram.js"
 
-pages_build_output_dir = "dist"
+[build]
+  command = "npm install"
+  cwd = "."
 
-functions = "./functions"
+[env.production]
+  account_id = "f16914f22a06b7c3ed9eaf8f19e47e3f"
+  project_name = "daftar-sv388"
+  worker = "submit"
+
+[pages]
+  project = "daftar-sv388"
+  production = true
+  build = {
+    output = "public"
+  }
