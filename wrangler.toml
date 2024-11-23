@@ -1,0 +1,14 @@
+name = "daftar-sv388"
+type = "javascript"
+
+[build]
+  command = "npm install"
+
+[env.production]
+  workers_dev = true
+  route = "https://svenus38.com/*"   # Ubah dengan URL yang sesuai
+  account_id = "f16914f22a06b7c3ed9eaf8f19e47e3f"
+  workers_api = true
+
+[functions]
+  directory = "./functions"   # Pastikan ini menunjuk ke folder yang benar
